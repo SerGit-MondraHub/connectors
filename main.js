@@ -31,7 +31,7 @@ const array2=
 function display()
 {
   let result=array[Math.round(Math.random()*array.length)]
-  document.getElementById('b').querySelector('h1').innerHTML=result;
+  document.getElementById('a').querySelector('h1').innerHTML=result;
 }
 
 function display2()
