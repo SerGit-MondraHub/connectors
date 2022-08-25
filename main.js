@@ -1,5 +1,5 @@
-const button=document.getElementById('a').getElementsByTagName('button');
-const button2=document.getElementById('b').getElementsByTagName('button');
+const button=document.getElementById('a').querySelector('button');
+const button2=document.getElementById('b').querySelector('button');
 
 const array=
       [
@@ -36,8 +36,8 @@ function display()
 
 function display2()
 {
-  let result=array2[Math.round(Math.random()*(array2.length-1)]
-  document.getElementById('b').querySelector('h1').innerHTML=result;
+  let result2=array2[Math.round(Math.random()*(array2.length-1)]
+  document.getElementById('b').querySelector('h1').innerHTML=result2;
 }
 
 button.onclick=display;
