@@ -1,5 +1,5 @@
-const button=document.getElementById('a').querySelector('button');
-//const button2=document.getElementById('b').querySelector('button');
+const button=document.getElementById('a').children[0];
+const button2=document.getElementById('b').children[0];
 
 const array=
       [
@@ -31,17 +31,17 @@ const array2=
 function display()
 {
   let result=array[Math.round(Math.random()*array.length)]
-  document.getElementById('a').querySelector('h1').innerHTML=result;
+  document.getElementById('a').children[1].innerHTML=result;
 }
 
 button.onclick=display;
 
-/*function display2()
+function display2()
 {
   let result2=array2[Math.round(Math.random()*(array2.length)]
-  document.getElementById('b').querySelector('h1').innerHTML=result2;
+  document.getElementById('b').children[1].innerHTML=result2;
 }
 
-button2.onclick=display2;*/
+button2.onclick=display2;
 
 
