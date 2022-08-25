@@ -1,5 +1,5 @@
-const button=document.getElementById('a').querySelector('button');
-const button2=document.getElementById('b').querySelector('button');
+const button=document.getElementById('a').getElementsByTagName('button');
+const button2=document.getElementById('b').getElementsByTagName('button');
 
 const array=
       [
