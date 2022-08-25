@@ -1,4 +1,5 @@
-let button=document.querySelector('button');
+const button=document.getElementById('a').querySelector('button');
+const button2=document.getElementById('b').querySelector('button');
 
 const array=
       [
@@ -13,17 +14,31 @@ const array=
         'even though',
         'in spite of',
         'despite',
-        'instead of',
+        'instead of'
+      ]
+
+const array2=
+      [
         'unless',
+        'still',
+        'already',
         'wether',
         'wether to',
+        'just',
         'since'
       ]
 
 function display()
 {
   let result=array[Math.round(Math.random()*array.length)]
-  document.querySelector('h1').innerHTML=result;
+  document.getElementById('b').querySelector('h1').innerHTML=result;
+}
+
+function display2()
+{
+  let result=array2[Math.round(Math.random()*array2.length)]
+  document.getElementById('b').querySelector('h1').innerHTML=result;
 }
 
 button.onclick=display;
+button2.onclick=display2;
