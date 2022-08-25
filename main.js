@@ -1,4 +1,4 @@
-const button=document.getElementById('b1');
+const button=document.querySelector('button');
 const button2=document.getElementById('b2');
 
 const array=
@@ -31,17 +31,15 @@ const array2=
 function display()
 {
   let result=array[Math.round(Math.random()*array.length)]
-  document.getElementById('r1').innerHTML=result;
+  document.querySelector('h1').innerHTML=result;
 }
 
 button.onclick=display;
 
 function display2()
 {
-  let result2=array2[Math.round(Math.random()*(array2.length)]
+  let result2=array2[Math.round(Math.random()*array2.length)]
   document.getElementById('r2').innerHTML=result2;
 }
 
 button2.onclick=display2;
-
-
