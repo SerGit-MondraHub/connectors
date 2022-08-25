@@ -30,13 +30,13 @@ const array2=
 
 function display()
 {
-  let result=array[Math.round(Math.random()*array.length)]
+  let result=array[Math.round(Math.random()*(array.length-1))]
   document.getElementById('a').querySelector('h1').innerHTML=result;
 }
 
 function display2()
 {
-  let result=array2[Math.round(Math.random()*array2.length)]
+  let result=array2[Math.round(Math.random()*(array2.length-1)]
   document.getElementById('b').querySelector('h1').innerHTML=result;
 }
 
