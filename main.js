@@ -30,7 +30,7 @@ const array2=
 
 function display()
 {
-  let result=array[Math.round(Math.random()*array.length)]
+  let result=array[Math.floor(Math.random()*array.length)]
   document.querySelector('h1').innerHTML=result;
 }
 
@@ -38,7 +38,7 @@ button.onclick=display;
 
 function display2()
 {
-  let result2=array2[Math.round(Math.random()*array2.length)]
+  let result2=array2[Math.floor(Math.random()*array2.length)]
   document.getElementById('r2').innerHTML=result2;
 }
 
